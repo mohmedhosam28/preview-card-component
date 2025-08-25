@@ -30,7 +30,7 @@ main .img {
     overflow: hidden;
 }
 
-main .img::before{
+main .img::before {
     content: "";
     position: absolute;
     background-color: transparent;
@@ -41,21 +41,24 @@ main .img::before{
     transform: translateX(-50%);
     transition: 1s;
 }
+
 main .img:hover::before {
     height: 100%;
     border-radius: 10px;
-    background-color:rgba(1, 153, 173, 0.369);
+    background-color: rgba(1, 153, 173, 0.369);
 }
-main .img::after{
+
+main .img::after {
     content: url(images/icon-view.svg);
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     transition-delay: 1s;
     opacity: 0;
 }
-main .img:hover::after{
+
+main .img:hover::after {
     opacity: 1;
 }
 
@@ -111,6 +114,8 @@ main .creator {
     display: flex;
     align-items: center;
     border-top: 1px solid rgba(255, 255, 255, 0.126);
+    padding-top: 6px;
+
 }
 
 main .creator img {
@@ -134,14 +139,16 @@ main .creator p:hover,
 main h2:hover {
     color: var(--hover-color);
 }
-.attribution{
+
+.attribution {
     position: absolute;
     bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
     color: var(--mainColor);
 }
-.attribution a{
+
+.attribution a {
     color: var(--hover-color);
     text-decoration: none;
     line-height: 1.4;
